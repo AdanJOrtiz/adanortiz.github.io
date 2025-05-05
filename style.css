@@ -1,0 +1,94 @@
+/* Base layout and typography */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #003366;
+    margin-top: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.3rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul, ol {
+    margin-left: 1.2rem;
+  }
+  
+  p {
+    margin: 1rem 0;
+  }
+  
+  /* Header and footer */
+  header {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Navigation (if needed) */
+  nav {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  /* Publication list */
+  .publication {
+    margin-bottom: 1rem;
+  }
+  
+  .publication-title {
+    font-weight: bold;
+  }
+  
+  .publication-authors {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px;
+      padding: 0 0.5rem;
+    }
+  }
+  
