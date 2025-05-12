@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Adán Ortiz'Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adán Ortiz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container" style="display: flex; align-items: flex-start; gap: 2rem;">
-    
-    <!-- Left column: your photo -->
-    <div>
-      <img src="headshot.jpeg" alt="Photo of Adán Ortiz" style="max-width: 200px; border-radius: 10px;">
-    </div>
-    
-    <!-- Right column: your content -->
-    <div>
+  <div class="container">
+    <div class="sidebar">
+      <img src="headshot.jpeg" alt="Adán Ortiz" class="profile-pic" />
       <h1>Adán Ortiz</h1>
-      
-      <h2>Research Interests</h2>
-      <p>Example text 2</p>
-
-      <h2>Publications</h2>
-      <p>Example text 3</p>
-
-      <h2><a href="about.html">Click here to learn about me!</a></h2>
+      <p>Mathematics & Data Science<br />UC Berkeley</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+    <div class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a 4th-year Mathematics & Data Science student at UC Berkeley. My interests lie in quantitative research, data analysis, and mathematical modeling.
+        </p>
+      </section>
 
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Statistical Learning</li>
+          <li>Applied Mathematics</li>
+          <li>Computational Modeling</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <details>
+          <summary><strong>Ortiz, A.</strong> (2024). Data-Driven Approaches in Economic Forecasting. <em>Journal of Quantitative Analysis</em>.</summary>
+          <p>
+            This paper explores the application of machine learning techniques in predicting economic trends, highlighting the efficacy of data-driven models over traditional methods.
+          </p>
+        </details>
+        <!-- Add more publications as needed -->
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:adanortiz@example.com">adanortiz@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/AdanJOrtiz">AdanJOrtiz</a></p>
+      </section>
+    </div>
   </div>
 </body>
 </html>
