@@ -16,26 +16,33 @@ body {
 .container {
   display: flex;
   min-height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 /* Sidebar styles */
 .sidebar {
-  background-color: #f4f4f4;
-  padding: 2rem;
-  width: 250px;
   flex-shrink: 0;
+  width: 240px;
   text-align: center;
 }
 
 .profile-pic {
-  width: 150px;
-  border-radius: 50%;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
 .sidebar h1 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.3rem;
 }
 
 .sidebar p {
@@ -64,8 +71,7 @@ body {
 
 /* Main content styles */
 .main-content {
-  flex: 1;
-  padding: 2rem;
+  flex-grow: 1;
 }
 
 .main-content section {
@@ -111,6 +117,7 @@ summary {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
   }
 
   .sidebar {
@@ -118,6 +125,6 @@ summary {
   }
 
   .main-content {
-    padding: 1rem;
+    width: 100%;
   }
 }
