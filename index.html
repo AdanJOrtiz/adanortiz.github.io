@@ -2,33 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adan J. Ortiz</title>
-
-  <!-- 1-file CSS import -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adán Ortiz</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="markdown-body">
-    <img src="headshot.jpeg" alt="Adan J. Ortiz" class="profile"/>
+  <div class="container">
+    <div class="sidebar">
+      <img src="headshot.jpeg" alt="Adán Ortiz" class="profile-pic" />
+      <h1>Adán Ortiz</h1>
+      <p>Mathematics & Data Science<br />UC Berkeley</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-# Adan J. Ortiz
+    <div class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a 4th-year Mathematics & Data Science student at UC Berkeley. My interests lie in quantitative research, data analysis, and mathematical modeling.
+        </p>
+      </section>
 
-Email: <a href="mailto:adan.j.ortiz@berkeley.edu">adan.j.ortiz@berkeley.edu</a>  
-Office: Evans Hall, UC Berkeley  
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Statistical Learning</li>
+          <li>Applied Mathematics</li>
+          <li>Computational Modeling</li>
+        </ul>
+      </section>
 
-## Background
-I am a pure mathematics major at UC Berkeley considering a double major in Data Science.  
-Here is my <a href="CV.pdf">CV</a>.
+      <section id="publications">
+        <h2>Publications</h2>
+        <details>
+          <summary><strong>Ortiz, A.</strong> (2024). Data-Driven Approaches in Economic Forecasting. <em>Journal of Quantitative Analysis</em>.</summary>
+          <p>
+            This paper explores the application of machine learning techniques in predicting economic trends, highlighting the efficacy of data-driven models over traditional methods.
+          </p>
+        </details>
+      </section>
 
-## Publications {#publications}
-* Coming soon …
-
-## Research interests
-Short description of your research interests.
-
-<!-- add more sections exactly as on Lindsey’s site -->
-
-  </main>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:adanortiz@example.com">adanortiz@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/AdanJOrtiz">AdanJOrtiz</a></p>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
