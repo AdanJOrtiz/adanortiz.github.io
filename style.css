@@ -1,66 +1,48 @@
-/* style.css */
-/*--------------------------------------
-  Base typography
----------------------------------------*/
+/* ──────────────────────────────────────────────
+   Core typography & layout
+   ────────────────────────────────────────────── */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
 
-/* Use the same system‐stack sans‐serif font stack */
 body {
-  margin: 1.5rem auto;
-  max-width: 42rem;
+  margin: 2rem auto;
+  max-width: 42rem;          /* exact same text width */
   padding: 0 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;           /* same base size */
+  line-height: 1.5;
   color: #111;
   background: #fff;
 }
 
-/* Images */
-.profile-image {
+/* make Markdown look like Lindsey’s */
+.markdown-body h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+.markdown-body h2 {
+  font-size: 1.75rem;
+  margin: 1.75rem 0 .75rem;
+  font-weight: 700;
+}
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0 0 1rem;
+}
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.markdown-body a:hover { text-decoration: underline; }
+
+.markdown-body ul { padding-left: 1.25rem; }
+
+/* headshot */
+.profile {
   display: block;
   max-width: 8rem;
   border-radius: 50%;
   margin: 0 0 1rem;
-}
-
-/* Headings */
-h1 {
-  font-size: 2.25rem;
-  margin-top: 0;
-  margin-bottom: 0.8889rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 1.75rem;
-  margin-top: 2rem;
-  margin-bottom: 0.6667rem;
-  font-weight: 600;
-}
-
-/* Paragraphs */
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-/* Links */
-a {
-  color: #0366d6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Lists */
-ul {
-  padding-left: 1.25rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-li + li {
-  margin-top: 0.25rem;
 }
