@@ -1,48 +1,130 @@
-/* ──────────────────────────────────────────────
-   Core typography & layout
-   ────────────────────────────────────────────── */
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 2rem auto;
-  max-width: 42rem;          /* exact same text width */
-  padding: 0 1rem;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;           /* same base size */
-  line-height: 1.5;
-  color: #111;
-  background: #fff;
+  font-family: 'Georgia', serif;
+  background-color: #ffffff;
+  color: #2b2b2b;
+  line-height: 1.6;
 }
 
-/* make Markdown look like Lindsey’s */
-.markdown-body h1 {
-  font-size: 2.5rem;
-  margin: 0 0 1rem;
-  font-weight: 700;
+/* Container layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  gap: 2rem;
 }
-.markdown-body h2 {
-  font-size: 1.75rem;
-  margin: 1.75rem 0 .75rem;
-  font-weight: 700;
+
+/* Sidebar styles */
+.sidebar {
+  flex-shrink: 0;
+  width: 240px;
+  text-align: center;
 }
-.markdown-body p,
-.markdown-body ul,
-.markdown-body ol {
-  margin: 0 0 1rem;
+
+.profile-pic {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
-.markdown-body a {
-  color: #0366d6;
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.3rem;
+}
+
+.sidebar p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 0.5rem 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+}
+
+.main-content section {
+  margin-bottom: 2rem;
+}
+
+.main-content h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.5rem;
+}
+
+.main-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.main-content a {
+  color: #0066cc;
   text-decoration: none;
 }
-.markdown-body a:hover { text-decoration: underline; }
 
-.markdown-body ul { padding-left: 1.25rem; }
+.main-content a:hover {
+  text-decoration: underline;
+}
 
-/* headshot */
-.profile {
-  display: block;
-  max-width: 8rem;
-  border-radius: 50%;
-  margin: 0 0 1rem;
+/* Publications toggle */
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
 }
