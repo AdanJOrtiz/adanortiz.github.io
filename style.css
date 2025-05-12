@@ -1,130 +1,66 @@
-/* Reset and base styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* style.css */
+/*--------------------------------------
+  Base typography
+---------------------------------------*/
 
+/* Use the same system‐stack sans‐serif font stack */
 body {
-  font-family: 'Georgia', serif;
-  background-color: #ffffff;
-  color: #2b2b2b;
+  margin: 1.5rem auto;
+  max-width: 42rem;
+  padding: 0 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.6;
+  color: #111;
+  background: #fff;
 }
 
-/* Container layout */
-.container {
-  display: flex;
-  min-height: 100vh;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
-  gap: 2rem;
+/* Images */
+.profile-image {
+  display: block;
+  max-width: 8rem;
+  border-radius: 50%;
+  margin: 0 0 1rem;
 }
 
-/* Sidebar styles */
-.sidebar {
-  flex-shrink: 0;
-  width: 240px;
-  text-align: center;
+/* Headings */
+h1 {
+  font-size: 2.25rem;
+  margin-top: 0;
+  margin-bottom: 0.8889rem;
+  font-weight: 600;
 }
 
-.profile-pic {
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6667rem;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.sidebar h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #003366;
-  border-bottom: 2px solid #003366;
-  padding-bottom: 0.3rem;
-}
-
-.sidebar p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar nav ul li {
-  margin: 0.5rem 0;
-}
-
-.sidebar nav ul li a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-
-.sidebar nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Main content styles */
-.main-content {
-  flex-grow: 1;
-}
-
-.main-content section {
-  margin-bottom: 2rem;
-}
-
-.main-content h2 {
-  color: #003366;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #003366;
-  padding-bottom: 0.5rem;
-}
-
-.main-content ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-}
-
-.main-content a {
-  color: #0066cc;
+/* Links */
+a {
+  color: #0366d6;
   text-decoration: none;
 }
 
-.main-content a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-/* Publications toggle */
-details {
+/* Lists */
+ul {
+  padding-left: 1.25rem;
+  margin-top: 0;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  background-color: #f9f9f9;
 }
 
-summary {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-
-  .main-content {
-    width: 100%;
-  }
+li + li {
+  margin-top: 0.25rem;
 }
